@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<span>0</span>
+		<button>计数</button>
+		<span>0</span>
+		<button>计数</button>
+		<span>0</span>
+		<button>计数</button>
+		<span>0</span>
+		<button>计数</button>-->
+		<script type="text/javascript">
+//			var $btnALL= document.querySelectorAll('button');
+//			var $spanALL= document.querySelectorAll('span');
+//				for(var i = 0 ; i < $btnALL.length ; i++){
+//					$btnALL[i].onclick = (function(i){
+//						var count = 0;
+//						return function (){
+//							 	count++
+//							 	$spanALL[i].innerHTML = count
+//						}
+//						
+//					}(i))
+//				}
+			  function checkType(val) {
+//			  	debugger
+               var type = Object.prototype.toString.call(val);
+               var reg = /\w+/g;
+               type = type.match(reg)[1];
+               return type;
+           }
+			  var arr = [1,2,3,4];
+			  var obj = {"name":"gg"};	  
+			 console.log(checkType(123)) 
+		</script>
+	</body>
+</html>

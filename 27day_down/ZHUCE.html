@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="title">
+				<p>
+					会员注册
+				</p>
+				<a href="denglu.html">已注册可直接登录</a>
+			</div>
+			<div class="minbox">
+				<form action="" method="get">
+					<input type="text" name="username" placeholder="输入手机号" id="one"/><br />
+					<input type="text" placeholder="请输出验证码"/><br />
+					<input type="password" placeholder="请输入密码" /><br />
+					<input type="password" placeholder="请再次输入密码" /><br />
+					<input type="submit" value="立即注册"/>
+				</form>
+			</div>
+		</div>
+		<script src="AJAXzhuce.js" type="text/javascript" charset="utf-8"></script>
+		<script src="register.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			sendAjax();
+			register.init("minbox");
+		</script>
+	</body>
+</html>
